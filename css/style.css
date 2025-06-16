@@ -37,6 +37,10 @@
     color: red;
 }
 
+.text-green {
+    color: forestgreen;
+}
+
 .carousel-track-container {
     overflow: hidden;
     padding: 0 3rem;
@@ -71,7 +75,7 @@
 }
 
 .container-background-gray {
-    background: lightgray;
+    background: #f3f3f3;
 }
 
 .form-check-input {
@@ -126,11 +130,76 @@
 .btn-white-red {
     background: white !important;
     border-color: red !important;
-    width: 200px !important;
-    height: 45px !important;
+    color: red;
 }
 
 .btn-white-red:hover {
     background: red !important;
     color: white !important;
+}
+
+.btn-white-gray {
+    background-color: #595959 !important;
+}
+
+.btn-white-gray:hover {
+    background-color: #2e2e2e !important;
+}
+
+.custom-dropdown .btn {
+    background-color: white !important;
+    color: gray !important;
+    border-color: gray !important;
+}
+
+.custom-dropdown .bi-chevron-down {
+    color: gray !important;
+}
+
+.custom-dropdown .dropdown-item {
+    color: gray !important;
+    background-color: white !important;
+}
+
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus {
+    color: white !important;
+    background-color: red !important;
+}
+
+.red-bullets li {
+    color: red;
+    font-size: 15px !important;
+}
+
+.ul-15px li {
+    color: black !important;
+    font-size: 15px !important;
+}
+
+.card-carousel-track-container {
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.card-carousel-track {
+    display: flex;
+    gap: 15px;
+}
+
+.card-carousel-slide {
+    height: auto;
+    flex: 0 0 calc(33.333% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.card-carousel-slide img {
+    padding: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
 }
