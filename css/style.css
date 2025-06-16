@@ -69,11 +69,15 @@
 .form-check-input {
     width: 1.2em;
     height: 1.2em;
-    padding: 12px;
+    padding: 16px;
     margin: 16px;
 }
 
 .form-check-input:checked {
-    background-color: red;
     border-color: black;
+    background-color: red;
+    background-image: none;
+    box-shadow:
+            inset 0 0 0 7px white,
+            inset 0 0 0 9px red;
 }
