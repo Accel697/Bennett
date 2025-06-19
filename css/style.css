@@ -33,8 +33,21 @@
     background: red !important;
 }
 
+.btn-group{
+    background: #ffffff !important;
+    border-color: #09ff00 !important;
+}
+.btn-group:hover {
+    background: #09ff00 !important;
+    color: white !important;
+}
+
 .span-red {
     color: red;
+}
+
+.container-green{
+    background: #09ff00;
 }
 
 .text-green {
@@ -74,8 +87,21 @@
     height: 100px;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 .container-background-gray {
     background: #f3f3f3;
+}
+
+.container-background-red {
+    background: red;
+}
+
+.border-gray {
+    border:2px black !important;
 }
 
 .form-check-input {
@@ -117,14 +143,18 @@
     background-color: rgba(255, 0, 0, 0.15);
     border-radius: 3px;
     margin-bottom: 1.5rem;
+    position: relative;
     overflow: hidden;
 }
 
 .progress-fill {
+    position: absolute;
+    left: -1px;
     height: 100%;
     background-color: red;
     border-radius: 3px;
     transition: width 0.3s ease;
+    width: 25%;
 }
 
 .btn-white-red {
@@ -202,4 +232,122 @@
     max-height: 90%;
     width: auto;
     height: auto;
+}
+
+.background-image {
+    max-width: 900px;
+    height: auto;
+    max-height: 400px;
+    opacity: 0.2;
+}
+
+.custom-benefit-box {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.benefit-header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 15px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.benefit-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.benefit-icon svg {
+    height: 40px;
+    width: auto;
+    fill: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.benefit-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.main-title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.sub-title {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.benefit-content {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: calc(100% + 2px);
+    padding: 0 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.custom-benefit-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 20;
+}
+
+.custom-benefit-box:hover .benefit-header {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.custom-benefit-box:hover .benefit-header .main-title,
+.custom-benefit-box:hover .benefit-header .sub-title {
+    color: white;
+}
+
+.custom-benefit-box:hover .benefit-icon svg {
+    fill: white;
+}
+
+.custom-benefit-box:hover .benefit-content {
+    max-height: 300px;
+    opacity: 1;
+    padding: 15px;
+}
+
+.card-team {
+    transition: all 0.4s ease;
+}
+
+.card-team:hover{
+    background-color: #ff0019 !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-team:hover .card-body .card-title,
+.card-team:hover .card-body .card-text {
+    color: white !important;
 }
